@@ -1,0 +1,102 @@
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Le conteneur principal du chat */
+#chat-container {
+    width: 450px;
+    max-width: 90%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: url("https://files.catbox.moe/lm04pl.jpeg");
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* L'en-tête */
+#header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* La boîte des messages */
+#chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style de base pour toutes les bulles de message */
+.message {
+    padding: 10px 15px;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    max-width: 75%;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* Bulle pour les messages de l'utilisateur (à droite) */
+.user-msg {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+/* Bulle pour les messages d'ALIX (à gauche) */
+.alix-msg {
+    background-color: #e9e9eb;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+/* La zone de saisie en bas */
+#input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#user-input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 1em;
+    outline: none;
+}
+
+#send-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
