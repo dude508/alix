@@ -1,5 +1,5 @@
 // ATANSYON: RANPLASE SA A LÈ OU FIN DEPLOYE BACKEND LA!
-const API_BASE_URL = 'http://localhost:3000'; 
+const API_BASE_URL = 'https://alix-ia-rq3r.onrender.com/'; 
 // Si w ap kouri l sou òdinatè w: 'http://localhost:3000'
 // Lè w fin deplwaye backend la sou Render: 'https://non-ou-chwazi-a.onrender.com'
 
