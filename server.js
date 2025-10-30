@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors'); 
 const { GoogleGenAI } = require('@google/generative-ai');
-
+const {GoogleGenerativeAI} = require('@google/generative-ai');
 // Sèvi ak PORT ki defini nan .env la, oswa 3000 pa defo.
 const port = process.env.PORT || 3000; 
 
@@ -22,7 +22,7 @@ if (!apiKey) {
     // Men li pa bon pou kouri lokalman si .env la pa la
 }
 
-const ai = new GoogleGenAI(apiKey);
+const ai = new GoogleGenerativeAI(apiKey);
 const model = 'gemini-2.5-flash';
 const systemInstruction = `
 Ou se ALIX, yon entèlijans atifisyèl ki sèvi sou yon sit entènèt. 
